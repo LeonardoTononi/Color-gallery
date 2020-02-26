@@ -7,9 +7,6 @@ const Layout = ({ children }) => (
       <h1>Color Gallery</h1>
     </header>
     {children}
-    <footer>
-      <p>Made by Leonardo Tononi</p>
-    </footer>
   </>
 )
 

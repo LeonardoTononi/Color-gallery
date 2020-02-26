@@ -42,7 +42,6 @@ const IndexPage = () => {
     <>
       <header>
         <h1>Color Gallery</h1>
-      </header>
       <section className="colors-container">
         {colors === undefined ? <div>Loading....</div> : colorsUI()}
       </section>

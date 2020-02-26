@@ -20,10 +20,12 @@ header {
   }
 }
 
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
+.colors-container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
 }

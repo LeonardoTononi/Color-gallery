@@ -42,12 +42,11 @@ const IndexPage = () => {
     <>
       <header>
         <h1>Color Gallery</h1>
-      </header>
       <section className="colors-container">
         {colors === undefined ? <div>Loading....</div> : colorsUI()}
       </section>
-      <Pagination prev={() => setPage(1)} next={() => setPage(2)} />
-    </>
+      <Pagination prev={() => setPage(1)} next={()=> setPage(2)} />
+    
   )
 }
 

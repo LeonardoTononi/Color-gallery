@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import "../styles/index.scss"
 
+import Layout from "../components/layout"
 import ColorCard from "../components/color-card"
 import Pagination from "../components/pagination"
 
@@ -42,11 +43,10 @@ const IndexPage = () => {
     <>
       <header>
         <h1>Color Gallery</h1>
-      </header>
       <section className="colors-container">
         {colors === undefined ? <div>Loading....</div> : colorsUI()}
       </section>
-      <Pagination prev={() => setPage(1)} next={() => setPage(2)} />
+      <Pagination prev={() => setPage(1)} next={() => setPage(2)}></Pagination>
     </>
   )
 }

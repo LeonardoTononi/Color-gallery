@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 
-const ColorCard = ({ color, colorCopied, setColorCopied, copyToClipboard }) => (
+const ColorCard = ({ color, setColorCopied }) => (
   <section
     className="color-card"
     onClick={() => {
-      copyToClipboard(color.color)
       setColorCopied(color.color)
-      setTimeout(() => setColorCopied(), 2000)
     }}
   >
     <div className="date">
@@ -14,7 +12,7 @@ const ColorCard = ({ color, colorCopied, setColorCopied, copyToClipboard }) => (
     </div>
     <div className="center-content">
       <h5>{color.name}</h5>
-      <h3>{colorCopied === color.color ? "Copied!" : color.color}</h3>
+      <h3>{color.color}</h3>
     </div>
     <div className="pantone">
       <p>{color.pantone_value}</p>

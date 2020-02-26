@@ -7,6 +7,7 @@ import Pagination from "../components/pagination"
 
 const IndexPage = () => {
   const [colorCopied, setColorCopied] = useState()
+  const [isLoading, setIsLoading] = useState(true)
   const [page, setPage] = useState(1)
   const [colors, setColors] = useState()
 
@@ -18,25 +19,19 @@ const IndexPage = () => {
       .then(data => setColors(data))
   }, [page])
 
-  const copyToClipboard = colorToCopy => {
-    let ghostElement = document.createElement("input")
-    document.body.appendChild(ghostElement)
-    ghostElement.setAttribute("value", colorToCopy)
-    ghostElement.select()
-    document.execCommand("copy")
-    document.body.removeChild(ghostElement)
-  }
-
   const colorsUI = () =>
     colors.data.map(color => (
       <ColorCard
         key={color.id}
         color={color}
-        colorCopied={colorCopied}
-        setColorCopied={setColorCopied}
-        copyToClipboard={copyToClipboard}
+        onClick={() => {
+          console.log("click")
+          setColorCopied(color.id)
+        }}
       ></ColorCard>
     ))
+
+  const copyToClipboard = () => {}
 
   return (
     <Layout>

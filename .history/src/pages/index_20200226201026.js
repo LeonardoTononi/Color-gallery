@@ -7,6 +7,7 @@ import Pagination from "../components/pagination"
 
 const IndexPage = () => {
   const [colorCopied, setColorCopied] = useState()
+  const [isLoading, setIsLoading] = useState(true)
   const [page, setPage] = useState(1)
   const [colors, setColors] = useState()
 
@@ -34,7 +35,6 @@ const IndexPage = () => {
         color={color}
         colorCopied={colorCopied}
         setColorCopied={setColorCopied}
-        copyToClipboard={copyToClipboard}
       ></ColorCard>
     ))
 

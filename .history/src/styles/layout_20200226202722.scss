@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap");
 
 * {
   margin: 0;
@@ -7,17 +7,13 @@
 
 body {
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Merriweather";
 }
 
 header {
   padding: 1rem;
   width: 100%;
   text-align: center;
-
-  h1 {
-    font-weight: 500;
-  }
 }
 
 footer {

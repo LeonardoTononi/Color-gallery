@@ -7,14 +7,8 @@
   border-radius: 20px;
   cursor: pointer;
   justify-content: space-between;
-  display: flex;
-  position: relative;
-  transition: bottom 100ms ease-in;
-  bottom: 0;
 
-  &:hover {
-    bottom: 5px;
-  }
+  display: flex;
 
   .center-content {
     align-self: center;
@@ -27,7 +21,6 @@
 
     h3 {
       font-weight: 500;
-      letter-spacing: 1.2px;
     }
   }
 

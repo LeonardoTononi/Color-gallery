@@ -9,8 +9,6 @@
   justify-content: space-between;
   display: flex;
   position: relative;
-  transition: bottom 100ms ease-in;
-  bottom: 0;
 
   &:hover {
     bottom: 5px;

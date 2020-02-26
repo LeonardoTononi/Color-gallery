@@ -10,18 +10,17 @@ const IndexPage = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [page, setPage] = useState(1)
   const [colors, setColors] = useState()
+  const [colorsAPI, setColorsAPI] = useState("https://reqres.in/api/colors")
 
   useEffect(() => {
-    let colorsAPI = `https://reqres.in/api/colors${page === 2 ? "?page=2" : ""}`
     fetch(colorsAPI)
       .then(res => res.json())
       .then(data => setColors(data))
-  }, [page])
+      .then(() => console.log(colors))
+  }, [])
 
   const colorsUI = () =>
-    colors.data.map(color => (
-      <ColorCard key={color.id} color={color}></ColorCard>
-    ))
+    colors.data.map(color => <ColorCard key={color.id}></ColorCard>)
 
   return (
     <Layout>

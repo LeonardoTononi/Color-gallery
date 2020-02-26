@@ -16,6 +16,7 @@ const IndexPage = () => {
     fetch(colorsAPI)
       .then(res => res.json())
       .then(data => setColors(data))
+      .then(() => console.log(colors))
   }, [page])
 
   const colorsUI = () =>

@@ -16,12 +16,11 @@ const IndexPage = () => {
     fetch(colorsAPI)
       .then(res => res.json())
       .then(data => setColors(data))
-  }, [page])
+      .then(() => console.log(colors))
+  }, [])
 
   const colorsUI = () =>
-    colors.data.map(color => (
-      <ColorCard key={color.id} color={color}></ColorCard>
-    ))
+    colors.data.map(color => <ColorCard key={color.id}></ColorCard>)
 
   return (
     <Layout>

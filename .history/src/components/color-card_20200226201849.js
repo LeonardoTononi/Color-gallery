@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
-import "../styles/color-card.scss"
+
 const ColorCard = ({ color, colorCopied, setColorCopied, copyToClipboard }) => (
   <section
-    style={{ background: `${color.color}` }}
+    style={{color: ${color.color}}}
     className="color-card"
     onClick={() => {
       copyToClipboard(color.color)

@@ -1,0 +1,12 @@
+.pagination {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  button {
+    background-color: none;
+    border: none;
+  }
+}

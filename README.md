@@ -3,7 +3,7 @@
 
  **Introduction.**
 
-  This application is made with gatsby, it makes the best use of this technology to be fast and efficient for all members of a team. It simply takes data from an API, shows it on two different pages from which you can copy it with a simple click. 
+  This application is made with gatsby, it makes the best use of this technology to be fast and efficient for all members of a team. It simply takes data from an API, shows it on two different pages from which you can copy the data with a simple click. 
 
   **Framework used**
 
